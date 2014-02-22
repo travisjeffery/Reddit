@@ -17,6 +17,6 @@ typedef void (^TRVSRedditAPIClientDictionaryBlock)(NSDictionary *, NSError *);
 + (instancetype)sharedClient;
 
 - (void)loginUsingUsername:(NSString *)username password:(NSString *)password block:(void (^)(BOOL , NSError *))block;
-- (void)fetchSubscribedSubredditsUsingBlock:(TRVSRedditAPIClientDictionaryBlock)block;
+- (void)fetchSubscribedSubredditsUsingBlock:(TRVSRedditAPIClientArrayBlock)block;
 
 @end

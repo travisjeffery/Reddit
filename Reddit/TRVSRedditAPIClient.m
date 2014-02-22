@@ -10,6 +10,8 @@
 
 #import <TRVSQueryStringSerializer.h>
 
+#import "TRVSSubreddit.h"
+
 @interface TRVSRedditAPIClient () <NSURLSessionDelegate>
 
 @property (nonatomic, strong) NSURLSession *URLSession;
@@ -59,15 +61,14 @@
                 NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
                 
                 if (JSON) {
-                    NSDictionary *JSONData = JSON[@"json"][@"data"];
-                    if (JSONData[@"modhash"])
-                        self.mutableHTTPRequestHeaders[@"X-Modhash"] = JSONData[@"modhash"];
-                    if (JSONData[@"cookie"])
-                        self.mutableHTTPRequestHeaders[@"Cookie"] = JSONData[@"cookie"];
+                    [self saveSessionUsingDictionary:JSON[@"json"][@"data"]];
+                    
+                    block(YES, nil);
                 } else {
                     block(NO, error);
                 }
             } else {
+                block(NO, error);
             }
         }
     }];
@@ -75,7 +76,7 @@
     [task resume];
 }
 
-- (void)fetchSubscribedSubredditsUsingBlock:(TRVSRedditAPIClientDictionaryBlock)block {
+- (void)fetchSubscribedSubredditsUsingBlock:(TRVSRedditAPIClientArrayBlock)block {
     NSError *error;
     NSURLRequest *request = [self requestWithString:@"subreddits/mine/subscriber.json" dictionary:nil method:@"GET" error:&error];
 
@@ -92,7 +93,14 @@
             if (!JSON) {
                 block(nil, error);
             } else {
-                block(JSON, nil);
+                NSArray *array = JSON[@"data"][@"children"];
+                NSMutableArray *result = [[NSMutableArray alloc] initWithCapacity:array.count];
+                
+                [array enumerateObjectsUsingBlock:^(NSDictionary *dictionary, NSUInteger idx, BOOL *stop) {
+                    [result addObject:[[TRVSSubreddit alloc] initWithDictionary:dictionary[@"data"]]];
+                }];
+                
+                block(result, nil);
             }
         }
     }];
@@ -128,6 +136,16 @@
     }];
     
     return request.copy;
+}
+
+- (void)saveSessionUsingDictionary:(NSDictionary *)dictionary {
+    if (dictionary[@"modhash"])
+        self.mutableHTTPRequestHeaders[@"X-Modhash"] = dictionary[@"modhash"];
+    
+    if (dictionary[@"cookie"]) {
+        NSString *cookie = [NSString stringWithFormat:@"reddit_session=%@", [dictionary[@"cookie"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+        self.mutableHTTPRequestHeaders[@"Cookie"] = cookie;
+    }
 }
 
 @end

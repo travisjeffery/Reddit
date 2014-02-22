@@ -10,6 +10,8 @@
 
 @interface TRVSSubreddit : TRVSModel
 
-@property (nonatomic, copy) NSString *name;
+@property (readonly) NSString *title;
+@property (readonly) NSString *publicDescription;
+@property (readonly) NSNumber *subscribersCount;
 
 @end

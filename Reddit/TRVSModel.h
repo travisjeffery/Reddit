@@ -12,4 +12,6 @@
 
 @property (nonatomic, copy) NSDictionary *dictionary;
 
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
 @end

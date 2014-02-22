@@ -31,18 +31,10 @@
 static TRVSUser *__currentUser = nil;
 
 + (void)setCurrentUser:(TRVSUser *)user {
-//    [[NSUserDefaults standardUserDefaults] setObject:user forKey:@"user"];
-//    if ([[NSUserDefaults standardUserDefaults] synchronize]) {
-        __currentUser = user;
-//    } else {
-//        // now what
-//    }
+    __currentUser = user;
 }
 
 + (instancetype)currentUser {
-    if (__currentUser == nil) {
-        __currentUser = [[NSUserDefaults standardUserDefaults] objectForKey:@"user"];
-    }
     return __currentUser;
 }
 

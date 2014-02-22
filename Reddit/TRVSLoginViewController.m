@@ -11,9 +11,9 @@
 
 #import "TRVSLoginView.h"
 
-#import "TRVSRedditAPIClient.h"
-
 #import "TRVSUser.h"
+
+#import "TRVSRedditAPIClient.h"
 
 @interface TRVSLoginViewController () <UITextFieldDelegate>
 
@@ -25,21 +25,8 @@
 
 @dynamic view;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)loadView {
-    self.view = [TRVSLoginView new];
-    
-    self.view.usernameTextField.delegate = self;
-    self.view.passwordTextField.delegate = self;
-    [self.view.loginButton addTarget:self action:@selector(login:) forControlEvents:UIControlEventTouchUpInside];
+    [self loadLoginView];
 }
 
 - (void)viewDidLoad {
@@ -64,8 +51,7 @@
                 [TRVSUser setCurrentUser:user];
                 [self showSubreddits];
             } else {
-                // do something with error
-                // maybe color the text field red shake it and have a message saying what went wrong
+                // display failure to login              
             } 
         }];
     }];
@@ -74,16 +60,28 @@
 #pragma mark - UITextFieldDelegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self editTextFieldAfterTextField:textField];
+    
+    return NO;
+}
+
+#pragma mark - Private
+
+- (void)loadLoginView {
+    self.view = [TRVSLoginView new];
+    self.view.usernameTextField.delegate = self;
+    self.view.passwordTextField.delegate = self;
+    [self.view.loginButton addTarget:self action:@selector(login:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)editTextFieldAfterTextField:(UITextField *)textField {
     if (textField == self.view.usernameTextField)
         [self.view.passwordTextField becomeFirstResponder];
     else {
         [self.view.passwordTextField resignFirstResponder];
         [self login:textField];
     }
-    return NO;
 }
-
-#pragma mark - Private
 
 - (void)showSubreddits {
     UIViewController *viewController = [[TRVSSubredditViewController alloc] initWithStyle:UITableViewStylePlain];

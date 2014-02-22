@@ -10,4 +10,16 @@
 
 @implementation TRVSSubreddit
 
+- (NSString *)title {
+    return self.dictionary[@"title"];
+}
+
+- (NSString *)publicDescription {
+    return self.dictionary[@"public_description"];
+}
+
+- (NSNumber *)subscribersCount {
+    return self.dictionary[@"subscribers"];
+}
+
 @end

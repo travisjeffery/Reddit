@@ -28,10 +28,12 @@ static NSString *CellIdentifier = @"SubredditCell";
 
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:CellIdentifier];
     
-    [TRVSRedditAPIClient.sharedClient fetchSubscribedSubredditsUsingBlock:^(NSDictionary *JSON, NSError *error) {
-       dispatch_async(dispatch_get_main_queue(), ^{           
+    [TRVSRedditAPIClient.sharedClient fetchSubscribedSubredditsUsingBlock:^(NSArray *subreddits, NSError *error) {
+        [NSOperationQueue.mainQueue addOperationWithBlock:^{
+            self.user.subreddits = subreddits;
+
            [self.tableView reloadData];
-       });
+        }];
     }];
 }
 
@@ -42,7 +44,7 @@ static NSString *CellIdentifier = @"SubredditCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     TRVSSubreddit *subreddit = [self subredditForIndexPath:indexPath];
-    cell.textLabel.text = subreddit.name;
+    cell.textLabel.text = subreddit.title;
     return cell;
 }
 

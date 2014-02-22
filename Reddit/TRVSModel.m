@@ -10,4 +10,14 @@
 
 @implementation TRVSModel
 
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
+    self = [super init];
+    
+    if (self) {
+        _dictionary = [dictionary copy];
+    }
+    
+    return self;
+}
+
 @end
