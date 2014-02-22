@@ -22,4 +22,8 @@
     return self.dictionary[@"subscribers"];
 }
 
+- (NSString *)displayName {
+    return self.dictionary[@"display_name"];
+}
+
 @end

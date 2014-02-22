@@ -44,7 +44,7 @@ static NSString *CellIdentifier = @"SubredditCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     TRVSSubreddit *subreddit = [self subredditForIndexPath:indexPath];
-    cell.textLabel.text = subreddit.title;
+    cell.textLabel.text = subreddit.displayName;
     return cell;
 }
 
