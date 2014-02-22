@@ -1,1276 +1,582 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>3270BF7618B482AE003EF606</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRVSUser.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3270BF7718B482AE003EF606</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRVSUser.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3270BF7818B482AE003EF606</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3270BF7718B482AE003EF606</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D194D418AD973B0049BDFF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>32D194E618AD973B0049BDFF</string>
-				<string>32D194FF18AD973B0049BDFF</string>
-				<string>32D194DF18AD973B0049BDFF</string>
-				<string>32D194DE18AD973B0049BDFF</string>
-				<string>3E78296AC0DF4275B1A4C62B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D194D518AD973B0049BDFF</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>TRVS</string>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Travis Jeffery</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>32D194F718AD973B0049BDFF</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>32D194DC18AD973B0049BDFF</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>32D194D818AD973B0049BDFF</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>32D194D418AD973B0049BDFF</string>
-			<key>productRefGroup</key>
-			<string>32D194DE18AD973B0049BDFF</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>32D194DC18AD973B0049BDFF</string>
-				<string>32D194F718AD973B0049BDFF</string>
-			</array>
-		</dict>
-		<key>32D194D818AD973B0049BDFF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>32D1950718AD973B0049BDFF</string>
-				<string>32D1950818AD973B0049BDFF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>32D194D918AD973B0049BDFF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>32D1951D18AEB7070049BDFF</string>
-				<string>3270BF7818B482AE003EF606</string>
-				<string>32D1951718AD97A10049BDFF</string>
-				<string>32D194ED18AD973B0049BDFF</string>
-				<string>32D1951A18AD98090049BDFF</string>
-				<string>32D1951118AD97670049BDFF</string>
-				<string>32D1952018AEC4490049BDFF</string>
-				<string>32D194F118AD973B0049BDFF</string>
-				<string>32D1951418AD97770049BDFF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>32D194DA18AD973B0049BDFF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>32D194E318AD973B0049BDFF</string>
-				<string>32D194E518AD973B0049BDFF</string>
-				<string>32D194E118AD973B0049BDFF</string>
-				<string>95BF527EA86F47B0897A2586</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>32D194DB18AD973B0049BDFF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>32D194EB18AD973B0049BDFF</string>
-				<string>32D194F318AD973B0049BDFF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>32D194DC18AD973B0049BDFF</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>32D1950918AD973B0049BDFF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>ED448AB7DBC44F8199CA0314</string>
-				<string>32D194D918AD973B0049BDFF</string>
-				<string>32D194DA18AD973B0049BDFF</string>
-				<string>32D194DB18AD973B0049BDFF</string>
-				<string>6021060A47E945B893B35C90</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Reddit</string>
-			<key>productName</key>
-			<string>Reddit</string>
-			<key>productReference</key>
-			<string>32D194DD18AD973B0049BDFF</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>32D194DD18AD973B0049BDFF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Reddit.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>32D194DE18AD973B0049BDFF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>32D194DD18AD973B0049BDFF</string>
-				<string>32D194F818AD973B0049BDFF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D194DF18AD973B0049BDFF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>32D194E018AD973B0049BDFF</string>
-				<string>32D194E218AD973B0049BDFF</string>
-				<string>32D194E418AD973B0049BDFF</string>
-				<string>32D194F918AD973B0049BDFF</string>
-				<string>DC5E432909A24FF082991DC3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D194E018AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>32D194E118AD973B0049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D194E018AD973B0049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D194E218AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>32D194E318AD973B0049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D194E218AD973B0049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D194E418AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>32D194E518AD973B0049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D194E418AD973B0049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D194E618AD973B0049BDFF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>32D194EF18AD973B0049BDFF</string>
-				<string>32D194F018AD973B0049BDFF</string>
-				<string>32D1950F18AD97670049BDFF</string>
-				<string>32D1951018AD97670049BDFF</string>
-				<string>32D1951B18AEB7070049BDFF</string>
-				<string>32D1951C18AEB7070049BDFF</string>
-				<string>32D1951518AD97A10049BDFF</string>
-				<string>32D1951618AD97A10049BDFF</string>
-				<string>32D1951218AD97770049BDFF</string>
-				<string>32D1951318AD97770049BDFF</string>
-				<string>32D1951E18AEC4490049BDFF</string>
-				<string>32D1951F18AEC4490049BDFF</string>
-				<string>32D1951818AD98090049BDFF</string>
-				<string>32D1951918AD98090049BDFF</string>
-				<string>3270BF7618B482AE003EF606</string>
-				<string>3270BF7718B482AE003EF606</string>
-				<string>32D194F218AD973B0049BDFF</string>
-				<string>32D194E718AD973B0049BDFF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Reddit</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D194E718AD973B0049BDFF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>32D194E818AD973B0049BDFF</string>
-				<string>32D194E918AD973B0049BDFF</string>
-				<string>32D194EC18AD973B0049BDFF</string>
-				<string>32D194EE18AD973B0049BDFF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D194E818AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Reddit-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D194E918AD973B0049BDFF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>32D194EA18AD973B0049BDFF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D194EA18AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D194EB18AD973B0049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D194E918AD973B0049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D194EC18AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D194ED18AD973B0049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D194EC18AD973B0049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D194EE18AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Reddit-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D194EF18AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRVSAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D194F018AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRVSAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D194F118AD973B0049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D194F018AD973B0049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D194F218AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D194F318AD973B0049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D194F218AD973B0049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D194F418AD973B0049BDFF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>32D1950618AD973B0049BDFF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>32D194F518AD973B0049BDFF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>32D194FA18AD973B0049BDFF</string>
-				<string>32D194FC18AD973B0049BDFF</string>
-				<string>32D194FB18AD973B0049BDFF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>32D194F618AD973B0049BDFF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>32D1950418AD973B0049BDFF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>32D194F718AD973B0049BDFF</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>32D1950C18AD973B0049BDFF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>32D194F418AD973B0049BDFF</string>
-				<string>32D194F518AD973B0049BDFF</string>
-				<string>32D194F618AD973B0049BDFF</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>32D194FE18AD973B0049BDFF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RedditTests</string>
-			<key>productName</key>
-			<string>RedditTests</string>
-			<key>productReference</key>
-			<string>32D194F818AD973B0049BDFF</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>32D194F818AD973B0049BDFF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RedditTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>32D194F918AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>32D194FA18AD973B0049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D194F918AD973B0049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D194FB18AD973B0049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D194E018AD973B0049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D194FC18AD973B0049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D194E418AD973B0049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D194FD18AD973B0049BDFF</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>32D194D518AD973B0049BDFF</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>32D194DC18AD973B0049BDFF</string>
-			<key>remoteInfo</key>
-			<string>Reddit</string>
-		</dict>
-		<key>32D194FE18AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>32D194DC18AD973B0049BDFF</string>
-			<key>targetProxy</key>
-			<string>32D194FD18AD973B0049BDFF</string>
-		</dict>
-		<key>32D194FF18AD973B0049BDFF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>32D1950518AD973B0049BDFF</string>
-				<string>32D1950018AD973B0049BDFF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RedditTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1950018AD973B0049BDFF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>32D1950118AD973B0049BDFF</string>
-				<string>32D1950218AD973B0049BDFF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1950118AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>RedditTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1950218AD973B0049BDFF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>32D1950318AD973B0049BDFF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1950318AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1950418AD973B0049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D1950218AD973B0049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D1950518AD973B0049BDFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>RedditTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1950618AD973B0049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D1950518AD973B0049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D1950718AD973B0049BDFF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>32D1950818AD973B0049BDFF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>32D1950918AD973B0049BDFF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>32D1950A18AD973B0049BDFF</string>
-				<string>32D1950B18AD973B0049BDFF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>32D1950A18AD973B0049BDFF</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3E78296AC0DF4275B1A4C62B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Reddit/Reddit-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Reddit/Reddit-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>32D1950B18AD973B0049BDFF</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3E78296AC0DF4275B1A4C62B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Reddit/Reddit-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Reddit/Reddit-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>32D1950C18AD973B0049BDFF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>32D1950D18AD973B0049BDFF</string>
-				<string>32D1950E18AD973B0049BDFF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>32D1950D18AD973B0049BDFF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Reddit.app/Reddit</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Reddit/Reddit-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>RedditTests/RedditTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>32D1950E18AD973B0049BDFF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Reddit.app/Reddit</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Reddit/Reddit-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RedditTests/RedditTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>32D1950F18AD97670049BDFF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRVSSubredditViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1951018AD97670049BDFF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRVSSubredditViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1951118AD97670049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D1951018AD97670049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D1951218AD97770049BDFF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRVSSubreddit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1951318AD97770049BDFF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRVSSubreddit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1951418AD97770049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D1951318AD97770049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D1951518AD97A10049BDFF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRVSModel.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1951618AD97A10049BDFF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRVSModel.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1951718AD97A10049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D1951618AD97A10049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D1951818AD98090049BDFF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRVSRedditAPIClient.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1951918AD98090049BDFF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRVSRedditAPIClient.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1951A18AD98090049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D1951918AD98090049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D1951B18AEB7070049BDFF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRVSLoginViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1951C18AEB7070049BDFF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRVSLoginViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1951D18AEB7070049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D1951C18AEB7070049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>32D1951E18AEC4490049BDFF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRVSLoginView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1951F18AEC4490049BDFF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRVSLoginView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32D1952018AEC4490049BDFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32D1951F18AEC4490049BDFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3E78296AC0DF4275B1A4C62B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6021060A47E945B893B35C90</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>95BF527EA86F47B0897A2586</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DC5E432909A24FF082991DC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DC5E432909A24FF082991DC3</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>ED448AB7DBC44F8199CA0314</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>32D194D518AD973B0049BDFF</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		322D64C218B85F8F0010711A /* TRVSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 322D64C118B85F8F0010711A /* TRVSKeychain.m */; };
+		3270BF7818B482AE003EF606 /* TRVSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3270BF7718B482AE003EF606 /* TRVSUser.m */; };
+		32D194E118AD973B0049BDFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D194E018AD973B0049BDFF /* Foundation.framework */; };
+		32D194E318AD973B0049BDFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D194E218AD973B0049BDFF /* CoreGraphics.framework */; };
+		32D194E518AD973B0049BDFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D194E418AD973B0049BDFF /* UIKit.framework */; };
+		32D194EB18AD973B0049BDFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32D194E918AD973B0049BDFF /* InfoPlist.strings */; };
+		32D194ED18AD973B0049BDFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D194EC18AD973B0049BDFF /* main.m */; };
+		32D194F118AD973B0049BDFF /* TRVSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D194F018AD973B0049BDFF /* TRVSAppDelegate.m */; };
+		32D194F318AD973B0049BDFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D194F218AD973B0049BDFF /* Images.xcassets */; };
+		32D194FA18AD973B0049BDFF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D194F918AD973B0049BDFF /* XCTest.framework */; };
+		32D194FB18AD973B0049BDFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D194E018AD973B0049BDFF /* Foundation.framework */; };
+		32D194FC18AD973B0049BDFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D194E418AD973B0049BDFF /* UIKit.framework */; };
+		32D1950418AD973B0049BDFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32D1950218AD973B0049BDFF /* InfoPlist.strings */; };
+		32D1950618AD973B0049BDFF /* RedditTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1950518AD973B0049BDFF /* RedditTests.m */; };
+		32D1951118AD97670049BDFF /* TRVSSubredditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1951018AD97670049BDFF /* TRVSSubredditViewController.m */; };
+		32D1951418AD97770049BDFF /* TRVSSubreddit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1951318AD97770049BDFF /* TRVSSubreddit.m */; };
+		32D1951718AD97A10049BDFF /* TRVSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1951618AD97A10049BDFF /* TRVSModel.m */; };
+		32D1951A18AD98090049BDFF /* TRVSRedditAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1951918AD98090049BDFF /* TRVSRedditAPIClient.m */; };
+		32D1951D18AEB7070049BDFF /* TRVSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1951C18AEB7070049BDFF /* TRVSLoginViewController.m */; };
+		32D1952018AEC4490049BDFF /* TRVSLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1951F18AEC4490049BDFF /* TRVSLoginView.m */; };
+		95BF527EA86F47B0897A2586 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5E432909A24FF082991DC3 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32D194FD18AD973B0049BDFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32D194D518AD973B0049BDFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D194DC18AD973B0049BDFF;
+			remoteInfo = Reddit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		322D64C018B85F8F0010711A /* TRVSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSKeychain.h; sourceTree = "<group>"; };
+		322D64C118B85F8F0010711A /* TRVSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSKeychain.m; sourceTree = "<group>"; };
+		3270BF7618B482AE003EF606 /* TRVSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSUser.h; sourceTree = "<group>"; };
+		3270BF7718B482AE003EF606 /* TRVSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSUser.m; sourceTree = "<group>"; };
+		32D194DD18AD973B0049BDFF /* Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D194E018AD973B0049BDFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		32D194E218AD973B0049BDFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		32D194E418AD973B0049BDFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		32D194E818AD973B0049BDFF /* Reddit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Reddit-Info.plist"; sourceTree = "<group>"; };
+		32D194EA18AD973B0049BDFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32D194EC18AD973B0049BDFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32D194EE18AD973B0049BDFF /* Reddit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reddit-Prefix.pch"; sourceTree = "<group>"; };
+		32D194EF18AD973B0049BDFF /* TRVSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRVSAppDelegate.h; sourceTree = "<group>"; };
+		32D194F018AD973B0049BDFF /* TRVSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRVSAppDelegate.m; sourceTree = "<group>"; };
+		32D194F218AD973B0049BDFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		32D194F818AD973B0049BDFF /* RedditTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D194F918AD973B0049BDFF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		32D1950118AD973B0049BDFF /* RedditTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedditTests-Info.plist"; sourceTree = "<group>"; };
+		32D1950318AD973B0049BDFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32D1950518AD973B0049BDFF /* RedditTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedditTests.m; sourceTree = "<group>"; };
+		32D1950F18AD97670049BDFF /* TRVSSubredditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSSubredditViewController.h; sourceTree = "<group>"; };
+		32D1951018AD97670049BDFF /* TRVSSubredditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSSubredditViewController.m; sourceTree = "<group>"; };
+		32D1951218AD97770049BDFF /* TRVSSubreddit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSSubreddit.h; sourceTree = "<group>"; };
+		32D1951318AD97770049BDFF /* TRVSSubreddit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSSubreddit.m; sourceTree = "<group>"; };
+		32D1951518AD97A10049BDFF /* TRVSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSModel.h; sourceTree = "<group>"; };
+		32D1951618AD97A10049BDFF /* TRVSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSModel.m; sourceTree = "<group>"; };
+		32D1951818AD98090049BDFF /* TRVSRedditAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSRedditAPIClient.h; sourceTree = "<group>"; };
+		32D1951918AD98090049BDFF /* TRVSRedditAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSRedditAPIClient.m; sourceTree = "<group>"; };
+		32D1951B18AEB7070049BDFF /* TRVSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSLoginViewController.h; sourceTree = "<group>"; };
+		32D1951C18AEB7070049BDFF /* TRVSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSLoginViewController.m; sourceTree = "<group>"; };
+		32D1951E18AEC4490049BDFF /* TRVSLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSLoginView.h; sourceTree = "<group>"; };
+		32D1951F18AEC4490049BDFF /* TRVSLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSLoginView.m; sourceTree = "<group>"; };
+		3E78296AC0DF4275B1A4C62B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		DC5E432909A24FF082991DC3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32D194DA18AD973B0049BDFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D194E318AD973B0049BDFF /* CoreGraphics.framework in Frameworks */,
+				32D194E518AD973B0049BDFF /* UIKit.framework in Frameworks */,
+				32D194E118AD973B0049BDFF /* Foundation.framework in Frameworks */,
+				95BF527EA86F47B0897A2586 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D194F518AD973B0049BDFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D194FA18AD973B0049BDFF /* XCTest.framework in Frameworks */,
+				32D194FC18AD973B0049BDFF /* UIKit.framework in Frameworks */,
+				32D194FB18AD973B0049BDFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		322D64BD18B85E020010711A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				32D1950F18AD97670049BDFF /* TRVSSubredditViewController.h */,
+				32D1951018AD97670049BDFF /* TRVSSubredditViewController.m */,
+				32D1951B18AEB7070049BDFF /* TRVSLoginViewController.h */,
+				32D1951C18AEB7070049BDFF /* TRVSLoginViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		322D64BE18B85E150010711A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32D1951818AD98090049BDFF /* TRVSRedditAPIClient.h */,
+				32D1951918AD98090049BDFF /* TRVSRedditAPIClient.m */,
+				32D1951518AD97A10049BDFF /* TRVSModel.h */,
+				32D1951618AD97A10049BDFF /* TRVSModel.m */,
+				32D1951218AD97770049BDFF /* TRVSSubreddit.h */,
+				32D1951318AD97770049BDFF /* TRVSSubreddit.m */,
+				3270BF7618B482AE003EF606 /* TRVSUser.h */,
+				3270BF7718B482AE003EF606 /* TRVSUser.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		322D64BF18B85E1C0010711A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				32D1951E18AEC4490049BDFF /* TRVSLoginView.h */,
+				32D1951F18AEC4490049BDFF /* TRVSLoginView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		322D64C318B85F920010711A /* TRVSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				322D64C018B85F8F0010711A /* TRVSKeychain.h */,
+				322D64C118B85F8F0010711A /* TRVSKeychain.m */,
+			);
+			name = TRVSKeychain;
+			sourceTree = "<group>";
+		};
+		32D194D418AD973B0049BDFF = {
+			isa = PBXGroup;
+			children = (
+				32D194E618AD973B0049BDFF /* Reddit */,
+				32D194FF18AD973B0049BDFF /* RedditTests */,
+				32D194DF18AD973B0049BDFF /* Frameworks */,
+				32D194DE18AD973B0049BDFF /* Products */,
+				3E78296AC0DF4275B1A4C62B /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		32D194DE18AD973B0049BDFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32D194DD18AD973B0049BDFF /* Reddit.app */,
+				32D194F818AD973B0049BDFF /* RedditTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32D194DF18AD973B0049BDFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32D194E018AD973B0049BDFF /* Foundation.framework */,
+				32D194E218AD973B0049BDFF /* CoreGraphics.framework */,
+				32D194E418AD973B0049BDFF /* UIKit.framework */,
+				32D194F918AD973B0049BDFF /* XCTest.framework */,
+				DC5E432909A24FF082991DC3 /* libPods.a */,
+				322D64C318B85F920010711A /* TRVSKeychain */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32D194E618AD973B0049BDFF /* Reddit */ = {
+			isa = PBXGroup;
+			children = (
+				32D194EF18AD973B0049BDFF /* TRVSAppDelegate.h */,
+				32D194F018AD973B0049BDFF /* TRVSAppDelegate.m */,
+				322D64BD18B85E020010711A /* View Controllers */,
+				322D64BE18B85E150010711A /* Models */,
+				322D64BF18B85E1C0010711A /* Views */,
+				32D194F218AD973B0049BDFF /* Images.xcassets */,
+				32D194E718AD973B0049BDFF /* Supporting Files */,
+			);
+			path = Reddit;
+			sourceTree = "<group>";
+		};
+		32D194E718AD973B0049BDFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32D194E818AD973B0049BDFF /* Reddit-Info.plist */,
+				32D194E918AD973B0049BDFF /* InfoPlist.strings */,
+				32D194EC18AD973B0049BDFF /* main.m */,
+				32D194EE18AD973B0049BDFF /* Reddit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32D194FF18AD973B0049BDFF /* RedditTests */ = {
+			isa = PBXGroup;
+			children = (
+				32D1950518AD973B0049BDFF /* RedditTests.m */,
+				32D1950018AD973B0049BDFF /* Supporting Files */,
+			);
+			path = RedditTests;
+			sourceTree = "<group>";
+		};
+		32D1950018AD973B0049BDFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32D1950118AD973B0049BDFF /* RedditTests-Info.plist */,
+				32D1950218AD973B0049BDFF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32D194DC18AD973B0049BDFF /* Reddit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32D1950918AD973B0049BDFF /* Build configuration list for PBXNativeTarget "Reddit" */;
+			buildPhases = (
+				ED448AB7DBC44F8199CA0314 /* Check Pods Manifest.lock */,
+				32D194D918AD973B0049BDFF /* Sources */,
+				32D194DA18AD973B0049BDFF /* Frameworks */,
+				32D194DB18AD973B0049BDFF /* Resources */,
+				6021060A47E945B893B35C90 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reddit;
+			productName = Reddit;
+			productReference = 32D194DD18AD973B0049BDFF /* Reddit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32D194F718AD973B0049BDFF /* RedditTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32D1950C18AD973B0049BDFF /* Build configuration list for PBXNativeTarget "RedditTests" */;
+			buildPhases = (
+				32D194F418AD973B0049BDFF /* Sources */,
+				32D194F518AD973B0049BDFF /* Frameworks */,
+				32D194F618AD973B0049BDFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32D194FE18AD973B0049BDFF /* PBXTargetDependency */,
+			);
+			name = RedditTests;
+			productName = RedditTests;
+			productReference = 32D194F818AD973B0049BDFF /* RedditTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32D194D518AD973B0049BDFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TRVS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Travis Jeffery";
+				TargetAttributes = {
+					32D194F718AD973B0049BDFF = {
+						TestTargetID = 32D194DC18AD973B0049BDFF;
+					};
+				};
+			};
+			buildConfigurationList = 32D194D818AD973B0049BDFF /* Build configuration list for PBXProject "Reddit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 32D194D418AD973B0049BDFF;
+			productRefGroup = 32D194DE18AD973B0049BDFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32D194DC18AD973B0049BDFF /* Reddit */,
+				32D194F718AD973B0049BDFF /* RedditTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32D194DB18AD973B0049BDFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D194EB18AD973B0049BDFF /* InfoPlist.strings in Resources */,
+				32D194F318AD973B0049BDFF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D194F618AD973B0049BDFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D1950418AD973B0049BDFF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6021060A47E945B893B35C90 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED448AB7DBC44F8199CA0314 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32D194D918AD973B0049BDFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D1951D18AEB7070049BDFF /* TRVSLoginViewController.m in Sources */,
+				3270BF7818B482AE003EF606 /* TRVSUser.m in Sources */,
+				32D1951718AD97A10049BDFF /* TRVSModel.m in Sources */,
+				32D194ED18AD973B0049BDFF /* main.m in Sources */,
+				32D1951A18AD98090049BDFF /* TRVSRedditAPIClient.m in Sources */,
+				32D1951118AD97670049BDFF /* TRVSSubredditViewController.m in Sources */,
+				322D64C218B85F8F0010711A /* TRVSKeychain.m in Sources */,
+				32D1952018AEC4490049BDFF /* TRVSLoginView.m in Sources */,
+				32D194F118AD973B0049BDFF /* TRVSAppDelegate.m in Sources */,
+				32D1951418AD97770049BDFF /* TRVSSubreddit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D194F418AD973B0049BDFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D1950618AD973B0049BDFF /* RedditTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32D194FE18AD973B0049BDFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32D194DC18AD973B0049BDFF /* Reddit */;
+			targetProxy = 32D194FD18AD973B0049BDFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32D194E918AD973B0049BDFF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32D194EA18AD973B0049BDFF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		32D1950218AD973B0049BDFF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32D1950318AD973B0049BDFF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32D1950718AD973B0049BDFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32D1950818AD973B0049BDFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32D1950A18AD973B0049BDFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E78296AC0DF4275B1A4C62B /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Reddit/Reddit-Prefix.pch";
+				INFOPLIST_FILE = "Reddit/Reddit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		32D1950B18AD973B0049BDFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E78296AC0DF4275B1A4C62B /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Reddit/Reddit-Prefix.pch";
+				INFOPLIST_FILE = "Reddit/Reddit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		32D1950D18AD973B0049BDFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Reddit.app/Reddit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Reddit/Reddit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RedditTests/RedditTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		32D1950E18AD973B0049BDFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Reddit.app/Reddit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Reddit/Reddit-Prefix.pch";
+				INFOPLIST_FILE = "RedditTests/RedditTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32D194D818AD973B0049BDFF /* Build configuration list for PBXProject "Reddit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D1950718AD973B0049BDFF /* Debug */,
+				32D1950818AD973B0049BDFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32D1950918AD973B0049BDFF /* Build configuration list for PBXNativeTarget "Reddit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D1950A18AD973B0049BDFF /* Debug */,
+				32D1950B18AD973B0049BDFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32D1950C18AD973B0049BDFF /* Build configuration list for PBXNativeTarget "RedditTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D1950D18AD973B0049BDFF /* Debug */,
+				32D1950E18AD973B0049BDFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32D194D518AD973B0049BDFF /* Project object */;
+}
