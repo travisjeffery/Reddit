@@ -1,0 +1,14 @@
+PODS:
+  - TRVSQueryStringSerializer (0.0.1)
+
+DEPENDENCIES:
+  - TRVSQueryStringSerializer (from `https://github.com/travisjeffery/TRVSQueryStringSerializer.git`)
+
+EXTERNAL SOURCES:
+  TRVSQueryStringSerializer:
+    :git: https://github.com/travisjeffery/TRVSQueryStringSerializer.git
+
+SPEC CHECKSUMS:
+  TRVSQueryStringSerializer: da769f060b5f714122b03f5fbb3f0e14958c180d
+
+COCOAPODS: 0.29.0
