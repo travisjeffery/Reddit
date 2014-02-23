@@ -6,13 +6,17 @@
 //  Copyright (c) 2014 Travis Jeffery. All rights reserved.
 //
 
+// view controllers
 #import "TRVSLoginViewController.h"
 #import "TRVSSubredditViewController.h"
 
+// views
 #import "TRVSLoginView.h"
 
+// models
 #import "TRVSUser.h"
 
+// api
 #import "TRVSRedditAPIClient.h"
 
 @interface TRVSLoginViewController () <UITextFieldDelegate>
@@ -85,7 +89,8 @@
 
 - (void)showSubreddits {
     UIViewController *viewController = [[TRVSSubredditViewController alloc] initWithStyle:UITableViewStylePlain];
-    [self presentViewController:viewController animated:YES completion:nil];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
 @end

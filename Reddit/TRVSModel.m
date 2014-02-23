@@ -13,11 +13,15 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     
-    if (self) {
+    if (self) {        
         _dictionary = [dictionary copy];
     }
     
     return self;
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"<%@: %p, dictionary = %@>", self.class, self, self.dictionary];
 }
 
 @end

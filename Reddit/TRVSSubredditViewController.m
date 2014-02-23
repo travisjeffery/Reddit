@@ -6,12 +6,16 @@
 //  Copyright (c) 2014 Travis Jeffery. All rights reserved.
 //
 
+// view controllers
 #import "TRVSSubredditViewController.h"
+#import "TRVSListingViewController.h"
 
-#import "TRVSRedditAPIClient.h"
-
+// models
 #import "TRVSUser.h"
 #import "TRVSSubreddit.h"
+
+// api
+#import "TRVSRedditAPIClient.h"
 
 @interface TRVSSubredditViewController ()
 
@@ -19,7 +23,7 @@
 
 @end
 
-static NSString *CellIdentifier = @"SubredditCell";
+static NSString *CellIdentifier = @"com.travisjeffery.cell.subreddit";
 
 @implementation TRVSSubredditViewController
 
@@ -44,8 +48,21 @@ static NSString *CellIdentifier = @"SubredditCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     TRVSSubreddit *subreddit = [self subredditForIndexPath:indexPath];
+
     cell.textLabel.text = subreddit.displayName;
+    
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    TRVSSubreddit *subreddit = [self subredditForIndexPath:indexPath];
+    
+    [TRVSRedditAPIClient.sharedClient fetchSubredditListingWithName:subreddit.displayName order:TRVSRedditAPIClientListingOrderHot block:^(NSArray *listings, NSError *error) {
+        [NSOperationQueue.mainQueue addOperationWithBlock:^{
+            TRVSListingViewController *viewController = [[TRVSListingViewController alloc] initWithListings:listings];            
+            [self.navigationController pushViewController:viewController animated:YES];
+        }];
+    }];
 }
 
 #pragma mark - Private

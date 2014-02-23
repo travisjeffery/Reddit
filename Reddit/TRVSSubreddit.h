@@ -13,6 +13,6 @@
 @property (readonly) NSString *title;
 @property (readonly) NSString *displayName;
 @property (readonly) NSString *publicDescription;
-@property (readonly) NSNumber *subscribersCount;
+@property (readonly) NSNumber *subscriberCount;
 
 @end

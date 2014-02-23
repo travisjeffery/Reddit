@@ -18,7 +18,7 @@
     return self.dictionary[@"public_description"];
 }
 
-- (NSNumber *)subscribersCount {
+- (NSNumber *)subscriberCount {
     return self.dictionary[@"subscribers"];
 }
 

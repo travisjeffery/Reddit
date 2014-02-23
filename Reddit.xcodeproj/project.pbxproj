@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		322D64C218B85F8F0010711A /* TRVSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 322D64C118B85F8F0010711A /* TRVSKeychain.m */; };
+		322D64C918B9B44B0010711A /* TRVSListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 322D64C818B9B44B0010711A /* TRVSListing.m */; };
+		322D64CC18B9B5AE0010711A /* TRVSListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322D64CB18B9B5AE0010711A /* TRVSListingViewController.m */; };
 		3270BF7818B482AE003EF606 /* TRVSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3270BF7718B482AE003EF606 /* TRVSUser.m */; };
 		32D194E118AD973B0049BDFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D194E018AD973B0049BDFF /* Foundation.framework */; };
 		32D194E318AD973B0049BDFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D194E218AD973B0049BDFF /* CoreGraphics.framework */; };
@@ -41,8 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		322D64C018B85F8F0010711A /* TRVSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSKeychain.h; sourceTree = "<group>"; };
-		322D64C118B85F8F0010711A /* TRVSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSKeychain.m; sourceTree = "<group>"; };
+		322D64C718B9B44B0010711A /* TRVSListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSListing.h; sourceTree = "<group>"; };
+		322D64C818B9B44B0010711A /* TRVSListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSListing.m; sourceTree = "<group>"; };
+		322D64CA18B9B5AE0010711A /* TRVSListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSListingViewController.h; sourceTree = "<group>"; };
+		322D64CB18B9B5AE0010711A /* TRVSListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSListingViewController.m; sourceTree = "<group>"; };
 		3270BF7618B482AE003EF606 /* TRVSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSUser.h; sourceTree = "<group>"; };
 		3270BF7718B482AE003EF606 /* TRVSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSUser.m; sourceTree = "<group>"; };
 		32D194DD18AD973B0049BDFF /* Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +112,8 @@
 				32D1951018AD97670049BDFF /* TRVSSubredditViewController.m */,
 				32D1951B18AEB7070049BDFF /* TRVSLoginViewController.h */,
 				32D1951C18AEB7070049BDFF /* TRVSLoginViewController.m */,
+				322D64CA18B9B5AE0010711A /* TRVSListingViewController.h */,
+				322D64CB18B9B5AE0010711A /* TRVSListingViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -116,14 +121,14 @@
 		322D64BE18B85E150010711A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				32D1951818AD98090049BDFF /* TRVSRedditAPIClient.h */,
-				32D1951918AD98090049BDFF /* TRVSRedditAPIClient.m */,
 				32D1951518AD97A10049BDFF /* TRVSModel.h */,
 				32D1951618AD97A10049BDFF /* TRVSModel.m */,
 				32D1951218AD97770049BDFF /* TRVSSubreddit.h */,
 				32D1951318AD97770049BDFF /* TRVSSubreddit.m */,
 				3270BF7618B482AE003EF606 /* TRVSUser.h */,
 				3270BF7718B482AE003EF606 /* TRVSUser.m */,
+				322D64C718B9B44B0010711A /* TRVSListing.h */,
+				322D64C818B9B44B0010711A /* TRVSListing.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -137,13 +142,13 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		322D64C318B85F920010711A /* TRVSKeychain */ = {
+		322D64C618B9B11A0010711A /* API */ = {
 			isa = PBXGroup;
 			children = (
-				322D64C018B85F8F0010711A /* TRVSKeychain.h */,
-				322D64C118B85F8F0010711A /* TRVSKeychain.m */,
+				32D1951818AD98090049BDFF /* TRVSRedditAPIClient.h */,
+				32D1951918AD98090049BDFF /* TRVSRedditAPIClient.m */,
 			);
-			name = TRVSKeychain;
+			name = API;
 			sourceTree = "<group>";
 		};
 		32D194D418AD973B0049BDFF = {
@@ -174,7 +179,6 @@
 				32D194E418AD973B0049BDFF /* UIKit.framework */,
 				32D194F918AD973B0049BDFF /* XCTest.framework */,
 				DC5E432909A24FF082991DC3 /* libPods.a */,
-				322D64C318B85F920010711A /* TRVSKeychain */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,6 +191,7 @@
 				322D64BD18B85E020010711A /* View Controllers */,
 				322D64BE18B85E150010711A /* Models */,
 				322D64BF18B85E1C0010711A /* Views */,
+				322D64C618B9B11A0010711A /* API */,
 				32D194F218AD973B0049BDFF /* Images.xcassets */,
 				32D194E718AD973B0049BDFF /* Supporting Files */,
 			);
@@ -357,10 +362,11 @@
 				3270BF7818B482AE003EF606 /* TRVSUser.m in Sources */,
 				32D1951718AD97A10049BDFF /* TRVSModel.m in Sources */,
 				32D194ED18AD973B0049BDFF /* main.m in Sources */,
+				322D64CC18B9B5AE0010711A /* TRVSListingViewController.m in Sources */,
 				32D1951A18AD98090049BDFF /* TRVSRedditAPIClient.m in Sources */,
 				32D1951118AD97670049BDFF /* TRVSSubredditViewController.m in Sources */,
-				322D64C218B85F8F0010711A /* TRVSKeychain.m in Sources */,
 				32D1952018AEC4490049BDFF /* TRVSLoginView.m in Sources */,
+				322D64C918B9B44B0010711A /* TRVSListing.m in Sources */,
 				32D194F118AD973B0049BDFF /* TRVSAppDelegate.m in Sources */,
 				32D1951418AD97770049BDFF /* TRVSSubreddit.m in Sources */,
 			);

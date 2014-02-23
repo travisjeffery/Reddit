@@ -8,9 +8,18 @@
 
 #import "TRVSRedditAPIClient.h"
 
+// models
+#import "TRVSSubreddit.h"
+#import "TRVSListing.h"
+
+// libs
 #import <TRVSQueryStringSerializer.h>
 
-#import "TRVSSubreddit.h"
+NSString *const TRVSRedditAPIClientErrorDomain = @"com.travisjeffery.reddit.error";
+
+NSString *const TRVSRedditAPIClientListingOrderPopular = @"popular";
+NSString *const TRVSRedditAPIClientListingOrderHot = @"hot";
+NSString *const TRVSRedditAPIClientListingOrderNew = @"new";
 
 @interface TRVSRedditAPIClient () <NSURLSessionDelegate>
 
@@ -37,7 +46,7 @@
     if (self) {
         _operationQueue = [NSOperationQueue new];
         _operationQueue.name = @"com.travisjeffery.reddit.api";
-        _URLSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:_operationQueue];
+        _URLSession = [NSURLSession sessionWithConfiguration:NSURLSessionConfiguration.defaultSessionConfiguration delegate:self delegateQueue:_operationQueue];
         _mutableHTTPRequestHeaders = [NSMutableDictionary new];
     }
 
@@ -68,6 +77,8 @@
                     block(NO, error);
                 }
             } else {
+                // set error
+                
                 block(NO, error);
             }
         }
@@ -107,6 +118,41 @@
 
     [task resume];
 }
+
+- (void)fetchSubredditListingWithName:(NSString *)name order:(NSString *)order block:(TRVSRedditAPIClientArrayBlock)block {
+    NSError *error;
+    NSString *path = [NSString stringWithFormat:@"r/%@/%@.json", name, order];
+    NSURLRequest *request = [self requestWithString:path dictionary:nil method:@"GET" error:&error];
+    
+    if (!request) {
+        block(nil, error);
+    }
+    
+    NSURLSessionDataTask *task = [self.URLSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error) {
+            block(nil, error);
+        } else {
+            NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+            
+            if (JSON) {
+                NSArray *array = JSON[@"data"][@"children"];
+                NSMutableArray *result = [[NSMutableArray alloc] initWithCapacity:array.count];
+                
+                [array enumerateObjectsUsingBlock:^(NSDictionary *dictionary, NSUInteger idx, BOOL *stop) {
+                    [result addObject:[[TRVSListing alloc] initWithDictionary:dictionary[@"data"]]];
+                }];
+                
+                block(result, nil);
+            } else {
+                block(nil, error);
+            }
+        }
+    }];
+    
+    [task resume];
+}
+
+#pragma mark - Private
 
 - (NSURL *)URLWithString:(NSString *)string {
     return [NSURL URLWithString:string relativeToURL:[NSURL URLWithString:@"https://ssl.reddit.com/"]];
