@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class TRVSSubreddit;
+
 @interface TRVSListingViewController : UITableViewController
 
-- (instancetype)initWithListings:(NSArray *)listings;
+- (instancetype)initWithSubreddit:(TRVSSubreddit *)subreddit;
 
 @end

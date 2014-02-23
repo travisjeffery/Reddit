@@ -59,8 +59,8 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.subreddit";
     
     [TRVSRedditAPIClient.sharedClient fetchSubredditListingWithName:subreddit.displayName order:TRVSRedditAPIClientListingOrderHot block:^(NSArray *listings, NSError *error) {
         [NSOperationQueue.mainQueue addOperationWithBlock:^{
-            TRVSListingViewController *viewController = [[TRVSListingViewController alloc] initWithListings:listings];            
-            [self.navigationController pushViewController:viewController animated:YES];
+            subreddit.listings = listings;
+            [self.navigationController pushViewController:[[TRVSListingViewController alloc] initWithSubreddit:subreddit] animated:YES];
         }];
     }];
 }

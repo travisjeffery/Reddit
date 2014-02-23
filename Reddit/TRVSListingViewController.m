@@ -10,23 +10,26 @@
 
 // models
 
+#import "TRVSSubreddit.h"
 #import "TRVSListing.h"
 
 static NSString *CellIdentifier = @"com.travisjeffery.cell.listing";
 
 @interface TRVSListingViewController ()
 
-@property (nonatomic, copy) NSArray *listings;
+@property (nonatomic, strong) TRVSSubreddit *subreddit;
+@property (nonatomic, strong) NSCache *cellHeightCache;
 
 @end
 
 @implementation TRVSListingViewController
 
-- (instancetype)initWithListings:(NSArray *)listings {
+- (instancetype)initWithSubreddit:(TRVSSubreddit *)subreddit {
     self = [super initWithStyle:UITableViewStylePlain];
     
     if (self) {
-        _listings = [listings copy];
+        _subreddit = subreddit;
+        _cellHeightCache = [NSCache new];
     }
     
     return self;
@@ -36,6 +39,8 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.listing";
     [super viewDidLoad];
     
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:CellIdentifier];
+    
+    self.title = self.subreddit.displayName;
 }
 
 #pragma mark - UITableViewDelegate
@@ -49,16 +54,32 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.listing";
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat height = 0.f;
+    
+    if ([self.cellHeightCache objectForKey:indexPath]) {
+        height = [[self.cellHeightCache objectForKey:indexPath] floatValue];
+    } else {
+        UITableViewCell *cell = [self tableView:tableView cellForRowAtIndexPath:indexPath];
+        
+        [cell layoutIfNeeded];
+        height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+        [self.cellHeightCache setObject:@(height) forKey:indexPath];
+    }
+    
+    return height;
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.listings.count;
+    return self.subreddit.listings.count;
 }
 
 #pragma mark - Private
 
 - (TRVSListing *)listingForIndexPath:(NSIndexPath *)indexPath {
-    return self.listings[indexPath.row];
+    return self.subreddit.listings[indexPath.row];
 }
 
 @end

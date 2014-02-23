@@ -15,4 +15,6 @@
 @property (readonly) NSString *publicDescription;
 @property (readonly) NSNumber *subscriberCount;
 
+@property (nonatomic, copy) NSArray *listings;
+
 @end
