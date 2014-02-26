@@ -55,7 +55,7 @@ NSString *const TRVSRedditAPIClientListingOrderNew = @"new";
 
 - (void)loginUsingUsername:(NSString *)username password:(NSString *)password block:(void (^)(BOOL , NSError *))block {
     NSError *error = nil;
-    NSDictionary *dictionary = @{ @"user": username, @"passwd": password, @"api_type": @"json" };
+    NSDictionary *dictionary = @{ @"user": username, @"passwd": password, @"rem": @"True", @"api_type": @"json" };
     NSURLRequest *request = [self requestWithString:@"api/login" dictionary:dictionary method:@"POST" error:&error];
 
     if (!request) {
@@ -177,21 +177,26 @@ NSString *const TRVSRedditAPIClientListingOrderNew = @"new";
         request.HTTPBody = data;
     }
     
-    [self.mutableHTTPRequestHeaders enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        [request setValue:obj forHTTPHeaderField:key];
-    }];
+//    [self.mutableHTTPRequestHeaders enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+//        [request setValue:obj forHTTPHeaderField:key];
+//    }];
     
     return request.copy;
 }
 
 - (void)saveSessionUsingDictionary:(NSDictionary *)dictionary {
-    if (dictionary[@"modhash"])
+    if (dictionary[@"modhash"]) {
         self.mutableHTTPRequestHeaders[@"X-Modhash"] = dictionary[@"modhash"];
-    
-    if (dictionary[@"cookie"]) {
-        NSString *cookie = [NSString stringWithFormat:@"reddit_session=%@", [dictionary[@"cookie"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-        self.mutableHTTPRequestHeaders[@"Cookie"] = cookie;
     }
+    
+//    if (dictionary[@"cookie"]) {
+//        NSString *cookieValue = [dictionary[@"cookie"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//        NSString *cookieName = @"reddit_session";
+//        self.mutableHTTPRequestHeaders[@"Cookie"] = [NSString stringWithFormat:@"%@=%@", cookieName, cookieValue];
+//        
+//        NSHTTPCookie *cookie = [[NSHTTPCookie alloc] initWithProperties:@{ NSHTTPCookieDomain: @"https://ssl.reddit.com/", NSHTTPCookieValue: cookieValue, NSHTTPCookieName: cookieName }];
+//        [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookie];
+//    }
 }
 
 @end

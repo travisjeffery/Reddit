@@ -27,11 +27,16 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.subreddit";
 
 @implementation TRVSSubredditViewController
 
+#pragma mark - UIViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:CellIdentifier];
     
+    self.title = NSLocalizedString(@"my subscribed subreddits", nil);
+}
+
 #pragma mark - TRVSViewControllerSetup
 
 - (void)setupWithCompletionHandler:(TRVSCompletionHandler)completionHandler {
@@ -47,14 +52,12 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.subreddit";
     }];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.user.subreddits.count;
-}
+#pragma mark - UITableViewDelegate
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     TRVSSubreddit *subreddit = [self subredditForIndexPath:indexPath];
-
+    
     cell.textLabel.text = subreddit.displayName;
     
     return cell;
@@ -66,6 +69,12 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.subreddit";
     [viewController setupWithCompletionHandler:^{
         [self.navigationController pushViewController:viewController animated:YES];
     }];
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.user.subreddits.count;
 }
 
 #pragma mark - Private

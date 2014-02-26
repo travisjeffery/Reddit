@@ -13,12 +13,21 @@
 #import "TRVSSubreddit.h"
 #import "TRVSListing.h"
 
+// views
+
+#import "TRVSLabelCell.h"
+
+// api
+
+#import "TRVSRedditAPIClient.h"
+
 static NSString *CellIdentifier = @"com.travisjeffery.cell.listing";
 
 @interface TRVSListingViewController ()
 
 @property (nonatomic, strong) TRVSSubreddit *subreddit;
 @property (nonatomic, strong) NSCache *cellHeightCache;
+@property (nonatomic, strong) UITableViewCell *heightCell;
 
 @end
 
@@ -35,13 +44,16 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.listing";
     return self;
 }
 
+#pragma mark - UIViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:CellIdentifier];
+    [self.tableView registerClass:TRVSLabelCell.class forCellReuseIdentifier:CellIdentifier];
     
     self.title = self.subreddit.displayName;
 }
+
 
 #pragma mark - TRVSViewControllerSetup
 
@@ -58,9 +70,8 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.listing";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    TRVSListing *listing = [self listingForIndexPath:indexPath];
     
-    cell.textLabel.text = listing.title;
+    [self configureCell:cell atIndexPath:indexPath];
     
     return cell;
 }
@@ -71,14 +82,18 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.listing";
     if ([self.cellHeightCache objectForKey:indexPath]) {
         height = [[self.cellHeightCache objectForKey:indexPath] floatValue];
     } else {
-        UITableViewCell *cell = [self tableView:tableView cellForRowAtIndexPath:indexPath];
-        
-        [cell layoutIfNeeded];
-        height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+        [self configureCell:self.heightCell atIndexPath:indexPath];
+        self.heightCell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(self.heightCell.bounds));
+        [self.heightCell layoutIfNeeded];
+        height = [self.heightCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
         [self.cellHeightCache setObject:@(height) forKey:indexPath];
     }
     
     return height;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewAutomaticDimension;
 }
 
 #pragma mark - UITableViewDataSource
@@ -91,6 +106,19 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.listing";
 
 - (TRVSListing *)listingForIndexPath:(NSIndexPath *)indexPath {
     return self.subreddit.listings[indexPath.row];
+}
+
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    TRVSListing *listing = [self listingForIndexPath:indexPath];
+
+    cell.textLabel.text = listing.title;
+}
+
+- (UITableViewCell *)heightCell {
+    if (!_heightCell) {
+        _heightCell = [[TRVSLabelCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    }
+    return _heightCell;
 }
 
 @end

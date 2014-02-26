@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		322D64C918B9B44B0010711A /* TRVSListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 322D64C818B9B44B0010711A /* TRVSListing.m */; };
 		322D64CC18B9B5AE0010711A /* TRVSListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322D64CB18B9B5AE0010711A /* TRVSListingViewController.m */; };
+		322D64D018BA020A0010711A /* TRVSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 322D64CF18BA020A0010711A /* TRVSKeychain.m */; };
+		326C864118BDA4BC0063FD12 /* TRVSLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 326C864018BDA4BC0063FD12 /* TRVSLabelCell.m */; };
 		3270BF7818B482AE003EF606 /* TRVSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3270BF7718B482AE003EF606 /* TRVSUser.m */; };
 		32D194E118AD973B0049BDFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D194E018AD973B0049BDFF /* Foundation.framework */; };
 		32D194E318AD973B0049BDFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D194E218AD973B0049BDFF /* CoreGraphics.framework */; };
@@ -46,6 +48,10 @@
 		322D64C818B9B44B0010711A /* TRVSListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSListing.m; sourceTree = "<group>"; };
 		322D64CA18B9B5AE0010711A /* TRVSListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSListingViewController.h; sourceTree = "<group>"; };
 		322D64CB18B9B5AE0010711A /* TRVSListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSListingViewController.m; sourceTree = "<group>"; };
+		322D64CE18BA020A0010711A /* TRVSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRVSKeychain.h; path = Frameworks/TRVSKeychain/TRVSKeychain.h; sourceTree = "<group>"; };
+		322D64CF18BA020A0010711A /* TRVSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRVSKeychain.m; path = Frameworks/TRVSKeychain/TRVSKeychain.m; sourceTree = "<group>"; };
+		326C863F18BDA4BC0063FD12 /* TRVSLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSLabelCell.h; sourceTree = "<group>"; };
+		326C864018BDA4BC0063FD12 /* TRVSLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSLabelCell.m; sourceTree = "<group>"; };
 		3270BF7618B482AE003EF606 /* TRVSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSUser.h; sourceTree = "<group>"; };
 		3270BF7718B482AE003EF606 /* TRVSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSUser.m; sourceTree = "<group>"; };
 		32D194DD18AD973B0049BDFF /* Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +82,8 @@
 		32D1951C18AEB7070049BDFF /* TRVSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSLoginViewController.m; sourceTree = "<group>"; };
 		32D1951E18AEC4490049BDFF /* TRVSLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSLoginView.h; sourceTree = "<group>"; };
 		32D1951F18AEC4490049BDFF /* TRVSLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSLoginView.m; sourceTree = "<group>"; };
+		32F0938B18BD849A00CBE625 /* TRVSCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRVSCommon.h; sourceTree = "<group>"; };
+		32F0938C18BD86FA00CBE625 /* TRVSViewControllerSetup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRVSViewControllerSetup.h; sourceTree = "<group>"; };
 		3E78296AC0DF4275B1A4C62B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		DC5E432909A24FF082991DC3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -138,6 +146,7 @@
 			children = (
 				32D1951E18AEC4490049BDFF /* TRVSLoginView.h */,
 				32D1951F18AEC4490049BDFF /* TRVSLoginView.m */,
+				326C864218BDA4BF0063FD12 /* Cells */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -149,6 +158,24 @@
 				32D1951918AD98090049BDFF /* TRVSRedditAPIClient.m */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		322D64CD18BA01ED0010711A /* TRVSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				322D64CE18BA020A0010711A /* TRVSKeychain.h */,
+				322D64CF18BA020A0010711A /* TRVSKeychain.m */,
+			);
+			name = TRVSKeychain;
+			sourceTree = "<group>";
+		};
+		326C864218BDA4BF0063FD12 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				326C863F18BDA4BC0063FD12 /* TRVSLabelCell.h */,
+				326C864018BDA4BC0063FD12 /* TRVSLabelCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		32D194D418AD973B0049BDFF = {
@@ -174,6 +201,7 @@
 		32D194DF18AD973B0049BDFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				322D64CD18BA01ED0010711A /* TRVSKeychain */,
 				32D194E018AD973B0049BDFF /* Foundation.framework */,
 				32D194E218AD973B0049BDFF /* CoreGraphics.framework */,
 				32D194E418AD973B0049BDFF /* UIKit.framework */,
@@ -188,6 +216,8 @@
 			children = (
 				32D194EF18AD973B0049BDFF /* TRVSAppDelegate.h */,
 				32D194F018AD973B0049BDFF /* TRVSAppDelegate.m */,
+				32F0938B18BD849A00CBE625 /* TRVSCommon.h */,
+				32F0938D18BD870100CBE625 /* Protocols */,
 				322D64BD18B85E020010711A /* View Controllers */,
 				322D64BE18B85E150010711A /* Models */,
 				322D64BF18B85E1C0010711A /* Views */,
@@ -225,6 +255,14 @@
 				32D1950218AD973B0049BDFF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32F0938D18BD870100CBE625 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				32F0938C18BD86FA00CBE625 /* TRVSViewControllerSetup.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +400,8 @@
 				3270BF7818B482AE003EF606 /* TRVSUser.m in Sources */,
 				32D1951718AD97A10049BDFF /* TRVSModel.m in Sources */,
 				32D194ED18AD973B0049BDFF /* main.m in Sources */,
+				326C864118BDA4BC0063FD12 /* TRVSLabelCell.m in Sources */,
+				322D64D018BA020A0010711A /* TRVSKeychain.m in Sources */,
 				322D64CC18B9B5AE0010711A /* TRVSListingViewController.m in Sources */,
 				32D1951A18AD98090049BDFF /* TRVSRedditAPIClient.m in Sources */,
 				32D1951118AD97670049BDFF /* TRVSSubredditViewController.m in Sources */,
