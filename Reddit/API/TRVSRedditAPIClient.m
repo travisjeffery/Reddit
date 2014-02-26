@@ -14,6 +14,7 @@
 
 // libs
 #import <TRVSQueryStringSerializer.h>
+#import "TRVSKeychain.h"
 
 NSString *const TRVSRedditAPIClientErrorDomain = @"com.travisjeffery.reddit.error";
 
@@ -47,7 +48,6 @@ NSString *const TRVSRedditAPIClientListingOrderNew = @"new";
         _operationQueue = [NSOperationQueue new];
         _operationQueue.name = @"com.travisjeffery.reddit.api";
         _URLSession = [NSURLSession sessionWithConfiguration:NSURLSessionConfiguration.defaultSessionConfiguration delegate:self delegateQueue:_operationQueue];
-        _mutableHTTPRequestHeaders = [NSMutableDictionary new];
     }
 
     return self;
@@ -65,20 +65,20 @@ NSString *const TRVSRedditAPIClientListingOrderNew = @"new";
     NSURLSessionDataTask *task = [self.URLSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if ([response isKindOfClass:NSHTTPURLResponse.class]) {
             NSHTTPURLResponse *HTTPURLResponse = (NSHTTPURLResponse *)response;
-            
+
             if ([[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(200, 100)] containsIndex:HTTPURLResponse.statusCode]) {
                 NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-                
+
                 if (JSON) {
                     [self saveSessionUsingDictionary:JSON[@"json"][@"data"]];
-                    
+
                     block(YES, nil);
                 } else {
                     block(NO, error);
                 }
             } else {
                 // set error
-                
+
                 block(NO, error);
             }
         }
@@ -100,17 +100,17 @@ NSString *const TRVSRedditAPIClientListingOrderNew = @"new";
             block(nil, error);
         } else {
             NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-            
+
             if (!JSON) {
                 block(nil, error);
             } else {
                 NSArray *array = JSON[@"data"][@"children"];
                 NSMutableArray *result = [[NSMutableArray alloc] initWithCapacity:array.count];
-                
+
                 [array enumerateObjectsUsingBlock:^(NSDictionary *dictionary, NSUInteger idx, BOOL *stop) {
                     [result addObject:[[TRVSSubreddit alloc] initWithDictionary:dictionary[@"data"]]];
                 }];
-                
+
                 block(result, nil);
             }
         }
@@ -123,32 +123,32 @@ NSString *const TRVSRedditAPIClientListingOrderNew = @"new";
     NSError *error;
     NSString *path = [NSString stringWithFormat:@"r/%@/%@.json", name, order];
     NSURLRequest *request = [self requestWithString:path dictionary:nil method:@"GET" error:&error];
-    
+
     if (!request) {
         block(nil, error);
     }
-    
+
     NSURLSessionDataTask *task = [self.URLSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error) {
             block(nil, error);
         } else {
             NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-            
+
             if (JSON) {
                 NSArray *array = JSON[@"data"][@"children"];
                 NSMutableArray *result = [[NSMutableArray alloc] initWithCapacity:array.count];
-                
+
                 [array enumerateObjectsUsingBlock:^(NSDictionary *dictionary, NSUInteger idx, BOOL *stop) {
                     [result addObject:[[TRVSListing alloc] initWithDictionary:dictionary[@"data"]]];
                 }];
-                
+
                 block(result, nil);
             } else {
                 block(nil, error);
             }
         }
     }];
-    
+
     [task resume];
 }
 
@@ -160,43 +160,69 @@ NSString *const TRVSRedditAPIClientListingOrderNew = @"new";
 
 - (NSURLRequest *)requestWithString:(NSString *)string dictionary:(NSDictionary *)dictionary method:(NSString *)method error:(NSError * __autoreleasing *)error {
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self URLWithString:string]];
-        
+
     if ([method isEqualToString:@"POST"]) {
         [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     }
-    
+
     request.HTTPMethod = method;
 
     if (dictionary) {
         NSData *data = [[TRVSQueryStringSerializer queryStringUsingDictionary:dictionary] dataUsingEncoding:NSUTF8StringEncoding];
-    
+
         if (!data) {
             return nil;
         }
-        
+
         request.HTTPBody = data;
     }
+
+    [self.mutableHTTPRequestHeaders enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        [request setValue:obj forHTTPHeaderField:key];
+    }];
     
-//    [self.mutableHTTPRequestHeaders enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-//        [request setValue:obj forHTTPHeaderField:key];
-//    }];
     
+
     return request.copy;
 }
 
 - (void)saveSessionUsingDictionary:(NSDictionary *)dictionary {
     if (dictionary[@"modhash"]) {
-        self.mutableHTTPRequestHeaders[@"X-Modhash"] = dictionary[@"modhash"];
+        NSString *modhash = dictionary[@"modhash"];
+        self.mutableHTTPRequestHeaders[@"X-Modhash"] = modhash;
+        [TRVSKeychain setPassword:modhash service:@"reddit" account:@"modhash"];
     }
     
-//    if (dictionary[@"cookie"]) {
-//        NSString *cookieValue = [dictionary[@"cookie"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-//        NSString *cookieName = @"reddit_session";
-//        self.mutableHTTPRequestHeaders[@"Cookie"] = [NSString stringWithFormat:@"%@=%@", cookieName, cookieValue];
-//        
-//        NSHTTPCookie *cookie = [[NSHTTPCookie alloc] initWithProperties:@{ NSHTTPCookieDomain: @"https://ssl.reddit.com/", NSHTTPCookieValue: cookieValue, NSHTTPCookieName: cookieName }];
-//        [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookie];
-//    }
+    if (dictionary[@"cookie"]) {
+        NSString *cookie = [NSString stringWithFormat:@"reddit_session=%@", [dictionary[@"cookie"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+        self.mutableHTTPRequestHeaders[@"Cookie"] = cookie;
+        [TRVSKeychain setPassword:cookie service:@"reddit" account:@"cookie"];
+    }
+}
+
+- (BOOL)isLoggedIn {
+    NSError *error = nil;
+    NSString *modhash = [TRVSKeychain passwordForService:@"reddit" account:@"modhash" error:&error];
+    NSString *cookie = [TRVSKeychain passwordForService:@"reddit" account:@"cookie" error:&error];
+    
+    return modhash.length && cookie.length;
+}
+
+- (NSMutableDictionary *)mutableHTTPRequestHeaders {
+    if (!_mutableHTTPRequestHeaders) {
+        _mutableHTTPRequestHeaders = [NSMutableDictionary new];
+        NSError *error = nil;
+        NSString *modhash = [TRVSKeychain passwordForService:@"reddit" account:@"modhash" error:&error];
+
+        if (modhash)
+            self.mutableHTTPRequestHeaders[@"X-Modhash"] = modhash;
+        
+        NSString *cookie = [TRVSKeychain passwordForService:@"reddit" account:@"cookie"];
+        
+        if (cookie)
+            self.mutableHTTPRequestHeaders[@"Cookie"] = cookie;
+    }
+    return _mutableHTTPRequestHeaders;
 }
 
 @end

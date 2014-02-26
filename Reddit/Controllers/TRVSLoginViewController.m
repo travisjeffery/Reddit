@@ -35,8 +35,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    if ([TRVSUser currentUser]) {
+
+    if (TRVSRedditAPIClient.sharedClient.isLoggedIn) {
         [self showSubreddits];
     } else {
         [self.view.usernameTextField becomeFirstResponder];
@@ -47,7 +47,7 @@
 
 - (void)login:(id)sender {
     [self.view endEditing:YES];
-    
+
     [TRVSRedditAPIClient.sharedClient loginUsingUsername:self.view.usernameTextField.text password:self.view.passwordTextField.text block:^(BOOL loggedIn, NSError *error) {
         [NSOperationQueue.mainQueue addOperationWithBlock:^{
             if (loggedIn) {
@@ -56,7 +56,7 @@
                 [self showSubreddits];
             } else {
                 [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"error", nil) message:error.localizedDescription delegate:nil cancelButtonTitle:NSLocalizedString(@"cancel", nil) otherButtonTitles:nil] show];
-            } 
+            }
         }];
     }];
 }
@@ -65,7 +65,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [self editTextFieldAfterTextField:textField];
-    
+
     return NO;
 }
 
@@ -89,7 +89,7 @@
 
 - (void)showSubreddits {
     TRVSSubredditViewController *viewController = [[TRVSSubredditViewController alloc] initWithStyle:UITableViewStylePlain];
-    
+
     [viewController setupWithCompletionHandler:^{
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
         [self presentViewController:navigationController animated:YES completion:nil];

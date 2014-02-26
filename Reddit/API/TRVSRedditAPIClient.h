@@ -25,5 +25,6 @@ typedef void (^TRVSRedditAPIClientDictionaryBlock)(NSDictionary *, NSError *);
 - (void)loginUsingUsername:(NSString *)username password:(NSString *)password block:(void (^)(BOOL , NSError *))block;
 - (void)fetchSubscribedSubredditsUsingBlock:(TRVSRedditAPIClientArrayBlock)block;
 - (void)fetchSubredditListingWithName:(NSString *)name order:(NSString *)order block:(TRVSRedditAPIClientArrayBlock)block;
+- (BOOL)isLoggedIn;
 
 @end

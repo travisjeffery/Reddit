@@ -35,6 +35,9 @@ static TRVSUser *__currentUser = nil;
 }
 
 + (instancetype)currentUser {
+    if (!__currentUser) {
+        __currentUser = [TRVSUser new];
+    }
     return __currentUser;
 }
 

@@ -35,6 +35,8 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.subreddit";
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:CellIdentifier];
     
     self.title = NSLocalizedString(@"my subscribed subreddits", nil);
+
+    [self.tableView reloadData];
 }
 
 #pragma mark - TRVSViewControllerSetup
@@ -73,7 +75,7 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.subreddit";
 
 #pragma mark - UITableViewDataSource
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {    
     return self.user.subreddits.count;
 }
 
