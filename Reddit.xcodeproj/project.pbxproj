@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		322D64C918B9B44B0010711A /* TRVSListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 322D64C818B9B44B0010711A /* TRVSListing.m */; };
-		322D64CC18B9B5AE0010711A /* TRVSListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322D64CB18B9B5AE0010711A /* TRVSListingViewController.m */; };
 		322D64D018BA020A0010711A /* TRVSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 322D64CF18BA020A0010711A /* TRVSKeychain.m */; };
-		326C864118BDA4BC0063FD12 /* TRVSLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 326C864018BDA4BC0063FD12 /* TRVSLabelCell.m */; };
-		3270BF7818B482AE003EF606 /* TRVSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3270BF7718B482AE003EF606 /* TRVSUser.m */; };
 		32D194E118AD973B0049BDFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D194E018AD973B0049BDFF /* Foundation.framework */; };
 		32D194E318AD973B0049BDFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D194E218AD973B0049BDFF /* CoreGraphics.framework */; };
 		32D194E518AD973B0049BDFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D194E418AD973B0049BDFF /* UIKit.framework */; };
@@ -24,12 +20,16 @@
 		32D194FC18AD973B0049BDFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D194E418AD973B0049BDFF /* UIKit.framework */; };
 		32D1950418AD973B0049BDFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32D1950218AD973B0049BDFF /* InfoPlist.strings */; };
 		32D1950618AD973B0049BDFF /* RedditTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1950518AD973B0049BDFF /* RedditTests.m */; };
-		32D1951118AD97670049BDFF /* TRVSSubredditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1951018AD97670049BDFF /* TRVSSubredditViewController.m */; };
-		32D1951418AD97770049BDFF /* TRVSSubreddit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1951318AD97770049BDFF /* TRVSSubreddit.m */; };
-		32D1951718AD97A10049BDFF /* TRVSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1951618AD97A10049BDFF /* TRVSModel.m */; };
-		32D1951A18AD98090049BDFF /* TRVSRedditAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1951918AD98090049BDFF /* TRVSRedditAPIClient.m */; };
-		32D1951D18AEB7070049BDFF /* TRVSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1951C18AEB7070049BDFF /* TRVSLoginViewController.m */; };
-		32D1952018AEC4490049BDFF /* TRVSLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1951F18AEC4490049BDFF /* TRVSLoginView.m */; };
+		32D4DB7418BDA9730026E3C2 /* TRVSRedditAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DB5D18BDA9730026E3C2 /* TRVSRedditAPIClient.m */; };
+		32D4DB7518BDA9730026E3C2 /* TRVSListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DB6018BDA9730026E3C2 /* TRVSListingViewController.m */; };
+		32D4DB7618BDA9730026E3C2 /* TRVSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DB6218BDA9730026E3C2 /* TRVSLoginViewController.m */; };
+		32D4DB7718BDA9730026E3C2 /* TRVSSubredditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DB6418BDA9730026E3C2 /* TRVSSubredditViewController.m */; };
+		32D4DB7818BDA9730026E3C2 /* TRVSListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DB6718BDA9730026E3C2 /* TRVSListing.m */; };
+		32D4DB7918BDA9730026E3C2 /* TRVSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DB6918BDA9730026E3C2 /* TRVSModel.m */; };
+		32D4DB7A18BDA9730026E3C2 /* TRVSSubreddit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DB6B18BDA9730026E3C2 /* TRVSSubreddit.m */; };
+		32D4DB7B18BDA9730026E3C2 /* TRVSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DB6D18BDA9730026E3C2 /* TRVSUser.m */; };
+		32D4DB7C18BDA9730026E3C2 /* TRVSLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DB7118BDA9730026E3C2 /* TRVSLabelCell.m */; };
+		32D4DB7D18BDA9730026E3C2 /* TRVSLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DB7318BDA9730026E3C2 /* TRVSLoginView.m */; };
 		95BF527EA86F47B0897A2586 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5E432909A24FF082991DC3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,16 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		322D64C718B9B44B0010711A /* TRVSListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSListing.h; sourceTree = "<group>"; };
-		322D64C818B9B44B0010711A /* TRVSListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSListing.m; sourceTree = "<group>"; };
-		322D64CA18B9B5AE0010711A /* TRVSListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSListingViewController.h; sourceTree = "<group>"; };
-		322D64CB18B9B5AE0010711A /* TRVSListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSListingViewController.m; sourceTree = "<group>"; };
 		322D64CE18BA020A0010711A /* TRVSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRVSKeychain.h; path = Frameworks/TRVSKeychain/TRVSKeychain.h; sourceTree = "<group>"; };
 		322D64CF18BA020A0010711A /* TRVSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRVSKeychain.m; path = Frameworks/TRVSKeychain/TRVSKeychain.m; sourceTree = "<group>"; };
-		326C863F18BDA4BC0063FD12 /* TRVSLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSLabelCell.h; sourceTree = "<group>"; };
-		326C864018BDA4BC0063FD12 /* TRVSLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSLabelCell.m; sourceTree = "<group>"; };
-		3270BF7618B482AE003EF606 /* TRVSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSUser.h; sourceTree = "<group>"; };
-		3270BF7718B482AE003EF606 /* TRVSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSUser.m; sourceTree = "<group>"; };
 		32D194DD18AD973B0049BDFF /* Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D194E018AD973B0049BDFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		32D194E218AD973B0049BDFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,18 +62,26 @@
 		32D1950118AD973B0049BDFF /* RedditTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedditTests-Info.plist"; sourceTree = "<group>"; };
 		32D1950318AD973B0049BDFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32D1950518AD973B0049BDFF /* RedditTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedditTests.m; sourceTree = "<group>"; };
-		32D1950F18AD97670049BDFF /* TRVSSubredditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSSubredditViewController.h; sourceTree = "<group>"; };
-		32D1951018AD97670049BDFF /* TRVSSubredditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSSubredditViewController.m; sourceTree = "<group>"; };
-		32D1951218AD97770049BDFF /* TRVSSubreddit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSSubreddit.h; sourceTree = "<group>"; };
-		32D1951318AD97770049BDFF /* TRVSSubreddit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSSubreddit.m; sourceTree = "<group>"; };
-		32D1951518AD97A10049BDFF /* TRVSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSModel.h; sourceTree = "<group>"; };
-		32D1951618AD97A10049BDFF /* TRVSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSModel.m; sourceTree = "<group>"; };
-		32D1951818AD98090049BDFF /* TRVSRedditAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSRedditAPIClient.h; sourceTree = "<group>"; };
-		32D1951918AD98090049BDFF /* TRVSRedditAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSRedditAPIClient.m; sourceTree = "<group>"; };
-		32D1951B18AEB7070049BDFF /* TRVSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSLoginViewController.h; sourceTree = "<group>"; };
-		32D1951C18AEB7070049BDFF /* TRVSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSLoginViewController.m; sourceTree = "<group>"; };
-		32D1951E18AEC4490049BDFF /* TRVSLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSLoginView.h; sourceTree = "<group>"; };
-		32D1951F18AEC4490049BDFF /* TRVSLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSLoginView.m; sourceTree = "<group>"; };
+		32D4DB5C18BDA9730026E3C2 /* TRVSRedditAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSRedditAPIClient.h; sourceTree = "<group>"; };
+		32D4DB5D18BDA9730026E3C2 /* TRVSRedditAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSRedditAPIClient.m; sourceTree = "<group>"; };
+		32D4DB5F18BDA9730026E3C2 /* TRVSListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSListingViewController.h; sourceTree = "<group>"; };
+		32D4DB6018BDA9730026E3C2 /* TRVSListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSListingViewController.m; sourceTree = "<group>"; };
+		32D4DB6118BDA9730026E3C2 /* TRVSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSLoginViewController.h; sourceTree = "<group>"; };
+		32D4DB6218BDA9730026E3C2 /* TRVSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSLoginViewController.m; sourceTree = "<group>"; };
+		32D4DB6318BDA9730026E3C2 /* TRVSSubredditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSSubredditViewController.h; sourceTree = "<group>"; };
+		32D4DB6418BDA9730026E3C2 /* TRVSSubredditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSSubredditViewController.m; sourceTree = "<group>"; };
+		32D4DB6618BDA9730026E3C2 /* TRVSListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSListing.h; sourceTree = "<group>"; };
+		32D4DB6718BDA9730026E3C2 /* TRVSListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSListing.m; sourceTree = "<group>"; };
+		32D4DB6818BDA9730026E3C2 /* TRVSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSModel.h; sourceTree = "<group>"; };
+		32D4DB6918BDA9730026E3C2 /* TRVSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSModel.m; sourceTree = "<group>"; };
+		32D4DB6A18BDA9730026E3C2 /* TRVSSubreddit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSSubreddit.h; sourceTree = "<group>"; };
+		32D4DB6B18BDA9730026E3C2 /* TRVSSubreddit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSSubreddit.m; sourceTree = "<group>"; };
+		32D4DB6C18BDA9730026E3C2 /* TRVSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSUser.h; sourceTree = "<group>"; };
+		32D4DB6D18BDA9730026E3C2 /* TRVSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSUser.m; sourceTree = "<group>"; };
+		32D4DB7018BDA9730026E3C2 /* TRVSLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSLabelCell.h; sourceTree = "<group>"; };
+		32D4DB7118BDA9730026E3C2 /* TRVSLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSLabelCell.m; sourceTree = "<group>"; };
+		32D4DB7218BDA9730026E3C2 /* TRVSLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSLoginView.h; sourceTree = "<group>"; };
+		32D4DB7318BDA9730026E3C2 /* TRVSLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSLoginView.m; sourceTree = "<group>"; };
 		32F0938B18BD849A00CBE625 /* TRVSCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRVSCommon.h; sourceTree = "<group>"; };
 		32F0938C18BD86FA00CBE625 /* TRVSViewControllerSetup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRVSViewControllerSetup.h; sourceTree = "<group>"; };
 		3E78296AC0DF4275B1A4C62B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -113,53 +113,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		322D64BD18B85E020010711A /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				32D1950F18AD97670049BDFF /* TRVSSubredditViewController.h */,
-				32D1951018AD97670049BDFF /* TRVSSubredditViewController.m */,
-				32D1951B18AEB7070049BDFF /* TRVSLoginViewController.h */,
-				32D1951C18AEB7070049BDFF /* TRVSLoginViewController.m */,
-				322D64CA18B9B5AE0010711A /* TRVSListingViewController.h */,
-				322D64CB18B9B5AE0010711A /* TRVSListingViewController.m */,
-			);
-			name = "View Controllers";
-			sourceTree = "<group>";
-		};
-		322D64BE18B85E150010711A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				32D1951518AD97A10049BDFF /* TRVSModel.h */,
-				32D1951618AD97A10049BDFF /* TRVSModel.m */,
-				32D1951218AD97770049BDFF /* TRVSSubreddit.h */,
-				32D1951318AD97770049BDFF /* TRVSSubreddit.m */,
-				3270BF7618B482AE003EF606 /* TRVSUser.h */,
-				3270BF7718B482AE003EF606 /* TRVSUser.m */,
-				322D64C718B9B44B0010711A /* TRVSListing.h */,
-				322D64C818B9B44B0010711A /* TRVSListing.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		322D64BF18B85E1C0010711A /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				32D1951E18AEC4490049BDFF /* TRVSLoginView.h */,
-				32D1951F18AEC4490049BDFF /* TRVSLoginView.m */,
-				326C864218BDA4BF0063FD12 /* Cells */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		322D64C618B9B11A0010711A /* API */ = {
-			isa = PBXGroup;
-			children = (
-				32D1951818AD98090049BDFF /* TRVSRedditAPIClient.h */,
-				32D1951918AD98090049BDFF /* TRVSRedditAPIClient.m */,
-			);
-			name = API;
-			sourceTree = "<group>";
-		};
 		322D64CD18BA01ED0010711A /* TRVSKeychain */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,15 +120,6 @@
 				322D64CF18BA020A0010711A /* TRVSKeychain.m */,
 			);
 			name = TRVSKeychain;
-			sourceTree = "<group>";
-		};
-		326C864218BDA4BF0063FD12 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				326C863F18BDA4BC0063FD12 /* TRVSLabelCell.h */,
-				326C864018BDA4BC0063FD12 /* TRVSLabelCell.m */,
-			);
-			name = Cells;
 			sourceTree = "<group>";
 		};
 		32D194D418AD973B0049BDFF = {
@@ -217,11 +161,11 @@
 				32D194EF18AD973B0049BDFF /* TRVSAppDelegate.h */,
 				32D194F018AD973B0049BDFF /* TRVSAppDelegate.m */,
 				32F0938B18BD849A00CBE625 /* TRVSCommon.h */,
+				32D4DB5B18BDA9730026E3C2 /* API */,
+				32D4DB5E18BDA9730026E3C2 /* Controllers */,
+				32D4DB6518BDA9730026E3C2 /* Models */,
+				32D4DB6E18BDA9730026E3C2 /* Views */,
 				32F0938D18BD870100CBE625 /* Protocols */,
-				322D64BD18B85E020010711A /* View Controllers */,
-				322D64BE18B85E150010711A /* Models */,
-				322D64BF18B85E1C0010711A /* Views */,
-				322D64C618B9B11A0010711A /* API */,
 				32D194F218AD973B0049BDFF /* Images.xcassets */,
 				32D194E718AD973B0049BDFF /* Supporting Files */,
 			);
@@ -255,6 +199,62 @@
 				32D1950218AD973B0049BDFF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32D4DB5B18BDA9730026E3C2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				32D4DB5C18BDA9730026E3C2 /* TRVSRedditAPIClient.h */,
+				32D4DB5D18BDA9730026E3C2 /* TRVSRedditAPIClient.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		32D4DB5E18BDA9730026E3C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				32D4DB5F18BDA9730026E3C2 /* TRVSListingViewController.h */,
+				32D4DB6018BDA9730026E3C2 /* TRVSListingViewController.m */,
+				32D4DB6118BDA9730026E3C2 /* TRVSLoginViewController.h */,
+				32D4DB6218BDA9730026E3C2 /* TRVSLoginViewController.m */,
+				32D4DB6318BDA9730026E3C2 /* TRVSSubredditViewController.h */,
+				32D4DB6418BDA9730026E3C2 /* TRVSSubredditViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		32D4DB6518BDA9730026E3C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32D4DB6618BDA9730026E3C2 /* TRVSListing.h */,
+				32D4DB6718BDA9730026E3C2 /* TRVSListing.m */,
+				32D4DB6818BDA9730026E3C2 /* TRVSModel.h */,
+				32D4DB6918BDA9730026E3C2 /* TRVSModel.m */,
+				32D4DB6A18BDA9730026E3C2 /* TRVSSubreddit.h */,
+				32D4DB6B18BDA9730026E3C2 /* TRVSSubreddit.m */,
+				32D4DB6C18BDA9730026E3C2 /* TRVSUser.h */,
+				32D4DB6D18BDA9730026E3C2 /* TRVSUser.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		32D4DB6E18BDA9730026E3C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				32D4DB6F18BDA9730026E3C2 /* Cells */,
+				32D4DB7218BDA9730026E3C2 /* TRVSLoginView.h */,
+				32D4DB7318BDA9730026E3C2 /* TRVSLoginView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		32D4DB6F18BDA9730026E3C2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				32D4DB7018BDA9730026E3C2 /* TRVSLabelCell.h */,
+				32D4DB7118BDA9730026E3C2 /* TRVSLabelCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		32F0938D18BD870100CBE625 /* Protocols */ = {
@@ -396,19 +396,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32D1951D18AEB7070049BDFF /* TRVSLoginViewController.m in Sources */,
-				3270BF7818B482AE003EF606 /* TRVSUser.m in Sources */,
-				32D1951718AD97A10049BDFF /* TRVSModel.m in Sources */,
+				32D4DB7418BDA9730026E3C2 /* TRVSRedditAPIClient.m in Sources */,
+				32D4DB7818BDA9730026E3C2 /* TRVSListing.m in Sources */,
+				32D4DB7618BDA9730026E3C2 /* TRVSLoginViewController.m in Sources */,
+				32D4DB7918BDA9730026E3C2 /* TRVSModel.m in Sources */,
 				32D194ED18AD973B0049BDFF /* main.m in Sources */,
-				326C864118BDA4BC0063FD12 /* TRVSLabelCell.m in Sources */,
+				32D4DB7C18BDA9730026E3C2 /* TRVSLabelCell.m in Sources */,
+				32D4DB7A18BDA9730026E3C2 /* TRVSSubreddit.m in Sources */,
+				32D4DB7518BDA9730026E3C2 /* TRVSListingViewController.m in Sources */,
+				32D4DB7718BDA9730026E3C2 /* TRVSSubredditViewController.m in Sources */,
 				322D64D018BA020A0010711A /* TRVSKeychain.m in Sources */,
-				322D64CC18B9B5AE0010711A /* TRVSListingViewController.m in Sources */,
-				32D1951A18AD98090049BDFF /* TRVSRedditAPIClient.m in Sources */,
-				32D1951118AD97670049BDFF /* TRVSSubredditViewController.m in Sources */,
-				32D1952018AEC4490049BDFF /* TRVSLoginView.m in Sources */,
-				322D64C918B9B44B0010711A /* TRVSListing.m in Sources */,
 				32D194F118AD973B0049BDFF /* TRVSAppDelegate.m in Sources */,
-				32D1951418AD97770049BDFF /* TRVSSubreddit.m in Sources */,
+				32D4DB7B18BDA9730026E3C2 /* TRVSUser.m in Sources */,
+				32D4DB7D18BDA9730026E3C2 /* TRVSLoginView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
