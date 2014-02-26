@@ -90,9 +90,16 @@
 - (void)showSubreddits {
     TRVSSubredditViewController *viewController = [[TRVSSubredditViewController alloc] initWithStyle:UITableViewStylePlain];
 
+    UIActivityIndicatorView *activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    activityIndicatorView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin;
+    [activityIndicatorView startAnimating];
+    [self.view addSubview:activityIndicatorView];
+    
     [viewController setupWithCompletionHandler:^{
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-        [self presentViewController:navigationController animated:YES completion:nil];
+        [self presentViewController:navigationController animated:YES completion:^{
+            [activityIndicatorView removeFromSuperview];
+        }];
     }];
 }
 
