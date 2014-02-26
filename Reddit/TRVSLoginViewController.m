@@ -55,7 +55,7 @@
                 [TRVSUser setCurrentUser:user];
                 [self showSubreddits];
             } else {
-                // display failure to login              
+                [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"error", nil) message:error.localizedDescription delegate:nil cancelButtonTitle:NSLocalizedString(@"cancel", nil) otherButtonTitles:nil] show];
             } 
         }];
     }];
@@ -88,9 +88,12 @@
 }
 
 - (void)showSubreddits {
-    UIViewController *viewController = [[TRVSSubredditViewController alloc] initWithStyle:UITableViewStylePlain];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-    [self presentViewController:navigationController animated:YES completion:nil];
+    TRVSSubredditViewController *viewController = [[TRVSSubredditViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    [viewController setupWithCompletionHandler:^{
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+        [self presentViewController:navigationController animated:YES completion:nil];
+    }];
 }
 
 @end

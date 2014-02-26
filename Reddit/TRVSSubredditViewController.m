@@ -32,11 +32,17 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.subreddit";
 
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:CellIdentifier];
     
+#pragma mark - TRVSViewControllerSetup
+
+- (void)setupWithCompletionHandler:(TRVSCompletionHandler)completionHandler {
     [TRVSRedditAPIClient.sharedClient fetchSubscribedSubredditsUsingBlock:^(NSArray *subreddits, NSError *error) {
         [NSOperationQueue.mainQueue addOperationWithBlock:^{
-            self.user.subreddits = subreddits;
-
-           [self.tableView reloadData];
+            if (error) {
+                [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"error", nil) message:error.localizedDescription delegate:nil cancelButtonTitle:NSLocalizedString(@"cancel", nil) otherButtonTitles:nil] show];
+            } else {
+                self.user.subreddits = subreddits;
+                if (completionHandler) completionHandler();
+            }
         }];
     }];
 }
@@ -55,13 +61,10 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.subreddit";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    TRVSSubreddit *subreddit = [self subredditForIndexPath:indexPath];
+    TRVSListingViewController *viewController = [[TRVSListingViewController alloc] initWithSubreddit:[self subredditForIndexPath:indexPath]];
     
-    [TRVSRedditAPIClient.sharedClient fetchSubredditListingWithName:subreddit.displayName order:TRVSRedditAPIClientListingOrderHot block:^(NSArray *listings, NSError *error) {
-        [NSOperationQueue.mainQueue addOperationWithBlock:^{
-            subreddit.listings = listings;
-            [self.navigationController pushViewController:[[TRVSListingViewController alloc] initWithSubreddit:subreddit] animated:YES];
-        }];
+    [viewController setupWithCompletionHandler:^{
+        [self.navigationController pushViewController:viewController animated:YES];
     }];
 }
 

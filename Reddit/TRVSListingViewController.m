@@ -43,6 +43,17 @@ static NSString *CellIdentifier = @"com.travisjeffery.cell.listing";
     self.title = self.subreddit.displayName;
 }
 
+#pragma mark - TRVSViewControllerSetup
+
+- (void)setupWithCompletionHandler:(TRVSCompletionHandler)completionHandler {
+    [TRVSRedditAPIClient.sharedClient fetchSubredditListingWithName:self.subreddit.displayName order:TRVSRedditAPIClientListingOrderHot block:^(NSArray *listings, NSError *error) {
+        [NSOperationQueue.mainQueue addOperationWithBlock:^{
+            self.subreddit.listings = listings;
+            if (completionHandler) completionHandler();
+        }];
+    }];
+}
+
 #pragma mark - UITableViewDelegate
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

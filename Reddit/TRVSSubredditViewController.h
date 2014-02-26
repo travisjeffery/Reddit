@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TRVSSubredditViewController : UITableViewController
+#import "TRVSCommon.h"
+#import "TRVSViewControllerSetup.h"
+
+@interface TRVSSubredditViewController : UITableViewController <TRVSViewControllerSetup>
 
 @end

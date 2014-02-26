@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "TRVSCommon.h"
+#import "TRVSViewControllerSetup.h"
+
 @class TRVSSubreddit;
 
-@interface TRVSListingViewController : UITableViewController
+@interface TRVSListingViewController : UITableViewController <TRVSViewControllerSetup>
 
 - (instancetype)initWithSubreddit:(TRVSSubreddit *)subreddit;
 
