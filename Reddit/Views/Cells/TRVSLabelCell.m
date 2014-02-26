@@ -14,11 +14,12 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         UILabel *textLabel = self.textLabel;
+        textLabel.translatesAutoresizingMaskIntoConstraints = NO;
         textLabel.numberOfLines = 0;
         textLabel.lineBreakMode = NSLineBreakByWordWrapping;
         
-        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-16-[textLabel]-16-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(textLabel)]];
-        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-5-[textLabel]-5-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(textLabel)]];
+        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-12-[textLabel]-12-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(textLabel)]];
+        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-12-[textLabel]-12-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(textLabel)]];
     }
     return self;
 }
